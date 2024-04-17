@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    {% autoescape off %} Welcome to MyBusiness- Django Login!! Hello {{ name}}!!
+    Please confirm your email by clicking on the following link. Confirmation
+    Link: http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+    {%endautoescape %}
+  </body>
+</html>
